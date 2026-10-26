@@ -658,3 +658,28 @@ a.rk-name:hover { color: var(--accent-text); }
   .project-actions .expand-btn { margin-left: auto; }
   .project-actions .btn { padding: 6px 12px; font-size: .82rem; }
 }
+
+/* ---------- 綠色區塊：篩選區（含紀錄按鈕、全部展開／收合）與企劃卡片的展開／收合按鈕 ----------
+   在這些區塊裡把「紅色系」變數換成綠色，按鈕、選中的標籤、外框、hover 底色都會跟著變。 */
+:root {
+  --green: #1a8a26;
+  --green-soft: #e1f2e3;
+  --green-faint: #f2faf3;
+}
+:root[data-theme="dark"] {
+  --green: #2f9e3c;
+  --green-soft: #16301a;
+  --green-faint: #111813;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --green: #2f9e3c;
+    --green-soft: #16301a;
+    --green-faint: #111813;
+  }
+}
+.toolbar, .expand-btn {
+  --pink: var(--green);
+  --pink-soft: var(--green-soft);
+  --pink-faint: var(--green-faint);
+}
