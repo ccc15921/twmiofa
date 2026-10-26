@@ -2,7 +2,7 @@
   --pink-deep: #d91a33;
   --pink: #FF314A;
   --pink-bright: #FF314A;
-  --accent-text: #FF314A;
+  --accent-text: #1a8a26;          /* 文字用綠色（紅色只留給按鈕、標記、邊框） */
   --pink-soft: #ffe5e9;
   --pink-faint: #fff6f7;
   --ink: #111111;
@@ -30,7 +30,7 @@
 
 /* ---------- dark theme ---------- */
 :root[data-theme="dark"] {
-  --accent-text: #ff5a6e;
+  --accent-text: #5cc96a;
   --pink-soft: #3a1319;
   --pink-faint: #141213;
   --ink: #f2f2f3;
@@ -49,7 +49,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --accent-text: #ff5a6e;
+    --accent-text: #5cc96a;
     --pink-soft: #3a1319;
     --pink-faint: #141213;
     --ink: #f2f2f3;
